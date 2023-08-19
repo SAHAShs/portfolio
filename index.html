@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHAS H S</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* flex makes item come in a single line*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* making nav items in single line*/
+        nav {
+            display: flex;
+            justify-content: space-around;
+            /* space between items in nav */
+            align-items: center;
+            height: 90px;
+            background-color: rgb(34 34 34);;
+        }
+
+        /* font size for name*/
+        .left {
+            font-size: 2rem;
+            
+        }
+        nav .left h1 .red{
+            font-size: 3rem;
+        }
+        nav .left a{
+            display: flex;
+        }
+
+        /*makeing ul in singke line*/
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            /* to access li using nav ui*/
+            list-style: none;
+            /* bullets will gone*/
+            margin: 0px 35px;
+        }
+
+        .left a,
+        nav ul li a,
+        .leftsection2 ul li a,
+        .section5 ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover,
+        .leftsection2 ul li a:hover,
+        .left a:hover,
+        .section5 ul li a:hover {
+            /* bullets will gone*/
+            color: rgb(247, 255, 10);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(24, 20, 90);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0px;
+            align-items: center;
+        }
+
+        .secondsection {
+
+            justify-content: space-around;
+            margin: 23px 0px;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .educationtitle {
+            justify-content: center;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+        }
+
+        .education {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .seceducation {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .seceducation .rigthsection3 {
+            margin: 50px;
+        }
+
+        .seceducation .leftsection3 {
+            margin: 0px 0px 0px -170px;
+        }
+
+        .secondsection .education1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .leftsection2 ul li,
+        .leftsection3 ul li {
+            font-size: 1.2rem;
+        }
+
+        .rigthsection img {
+            width: 50vf;
+            height: 50vh;
+            margin: 70px;
+
+        }
+
+        .edu2,
+        .edu1,
+        .edu3 {
+            margin: 20px;
+        }
+
+        .educationimg1 {
+            width: 50vf;
+            height: 31vh;
+            margin: 0px;
+        }
+
+        .educationimg {
+            width: 50vf;
+            height: 31vh;
+            margin: 0px;
+            position: absolute;
+            margin: 141px -63px;
+        }
+        .section5 .educationimg {
+            width: 50vf;
+            height: 31vh;
+            margin: 0px;
+            position: absolute;
+            margin: 130px -63px;
+        }
+        .secondrighsection .educationimg{
+            margin:  50px -12px;
+            width: 50vf;
+            height: 31vh;
+            
+            position: absolute;
+        }
+
+        .rigthsection3 {
+            position: static left;
+        }
+
+        hr {
+            margin: 19px 41px 24px 36px;
+            height: 1.2px;
+            background-color: #b9a9a9;
+            border: 0;
+        }
+
+        .red {
+            color: red;
+            /* color: blue;*/
+        }
+
+        .leftsection {
+            font-size: 2.8rem;
+        }
+
+        .heads {
+            display: flex;
+            
+        }
+
+        .heads>div {
+            margin: 0px 60px;
+        }
+
+        
+
+        .findme-1 {
+            display: flex;
+            margin: 9px;
+        }
+
+        .foot-img {
+            height: 25px;
+            align-items: center;
+            align-content: center;
+            margin-top: 1px;
+            ;
+        }
+
+        .footerr ul li{
+            list-style: none;
+        }
+        .righ{
+            margin: 0px -92px 0px 107px;
+        }
+        .spanele{
+            font-size: 0.5rem;
+    color: gray;
+        }
+
+        .phone-call a + p    {
+        display: none;
+    }
+     
+    .phone-call a:hover + p {
+        
+        display: block;
+        color: green;
+        font-size: 0.8rem;
+    }
+
+        
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <div class="left"><a href=""><h1 class="red"><strong>S</strong></h1><h1>ahas</h1></a></div>
+            <div class="righ">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li class="phone-call"><a><img class="foot-img" src="images/phone-call.png"></a><p>9999</p></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="https://www.linkedin.com/in/sahas-h-s-9a833b247/" target="_blank"><img class="foot-img" src="images/linkedin.png"></a></li>
+                    <li><a href="https://www.hackerrank.com/sahasgowda81" target="_blank"><img class="foot-img" src="images/hackerrank_logo-21e2867566.svg"></a></li>
+                    <li><a href="https://www.codingninjas.com/studio/profile/bfc24932-9cf3-43bf-8b5f-145048d4101f" target="_blank"><img class="foot-img" src="images/coding-ninjas-logos-idFrWdCkB5.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hello,</div>
+                I am
+                <span class="red"><b><span id="element1"></span></b></span>
+                <div>I am a </div>
+                <div class="red">
+                    <strong>
+                        <span id="element2"></span>
+                    </strong>
+                </div>
+            </div>
+            <div class="rigthsection">
+                <img src="images/main.png.png">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondsection">
+
+            <div class="educationtitle"><span id="Education"></span></div>
+            <hr>
+            <div class="education1">
+                <div class="leftsection2">
+                    <ul class="edu1">
+                        <li><strong class="red">Course:</strong> B.E</li>
+                        <li><strong class="red">Specialization:</strong> Electronics and communication Engineering</li>
+                        <li><strong class="red">College:</strong> <a href="https://pestrust.edu.in/pesitm/"
+                                target="_blank">Pes Institute Of Technology And Management,
+                                Shivamogga</a></li>
+                        <li><strong class="red">PassOut Year:</strong>2023</li>
+                        <li><strong class="red">CGPA: </strong>8.58</li>
+                    </ul>
+
+                    <ul class="edu2">
+                        <li><strong class="red">Course:</strong> PUC</li>
+                        <li><strong class="red">Specialization:</strong> Science (PCMB)</li>
+                        <li><strong class="red">College:</strong> <a href="" target="_blank">Government Junior College,
+                                Sagara</a></li>
+                        <li><strong class="red">PassOut Year:</strong>2019</li>
+                        <li><strong class="red">Percentage: </strong>73.16</li>
+
+                    </ul>
+                    <ul class="edu3">
+                        <li><strong class="red">Course:</strong> SSLC</li>
+                        <li><strong class="red">School:</strong> <a href="" target="_blank">Pragthi Composite School,
+                                Sagara</a></li>
+                        <li><strong class="red">PassOut Year:</strong>2017</li>
+                        <li><strong class="red">Percentage: </strong>90.24</li>
+
+                    </ul>
+                </div>
+                <div class="rightsection2">
+                    <img class="educationimg1" src="images/mortarboard.png">
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="section3">
+            <div class="educationtitle"><span id="Skills"></span></div>
+            <hr>
+            <div class="seceducation">
+                <div class="leftsection3">
+                    <ul>
+                        <li class="edu1">Core Java</li>
+                        <li class="edu1">Python</li>
+                        <li class="edu1">C Programming</li>
+                        <li class="edu1">MySQL</li>
+                        <li class="edu1">HTML,CSS,JS</li>
+                        <li class="edu1">GIT,GITHub</li>
+
+
+                    </ul>
+                </div>
+                <div class="secondrighsection"><img class="educationimg" src="images/skills.png"></div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="section4">
+            <div class="educationtitle"><span id="Project"></span></div>
+            <hr>
+            <div class="seceducation">
+                <div class="leftsection3">
+                    <ul>
+                        <li class="edu1">Core Java</li>
+                        <li class="edu1">Python</li>
+                        <li class="edu1">C Programming</li>
+                        <li class="edu1">MySQL</li>
+                        <li class="edu1">HTML,CSS,JS</li>
+                        <li class="edu1">GIT,GITHub</li>
+
+
+                    </ul>
+                </div>
+                <div class="righsection3"><img class="educationimg" src="images/project.png"></div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="section5">
+            <div class="educationtitle"><span id="Certification"></span></div>
+            <hr>
+            <div class="seceducation">
+                <div class="leftsection3">
+                    <ul>
+                        <li class="edu1"><a href="https://files.codingninjas.in/certi_image42871153a4ffc665a6893d35e44bce0e7b8eed.jpg"target="_blank">OOPs in Java</a>  <span class="spanele"> (Provided by Coding Ninja)</span></li>
+                        <li class="edu1"><a href="https://www.hackerrank.com/certificates/f1e84417af7e" target="_blank">Java(Basics)</a>  <span class="spanele"> (Provided by HackerRank)</span></li>
+                        <li class="edu1"><a href=""target="_blank">Core Java</a>  <span class="spanele"> (Provided by PrepInsta)</span></li>
+                        <li class="edu1"><a href="/">C Programming</a>  <span class="spanele"> (Provided by PrepInsta)</span></li>
+                        <li class="edu1"><a href=""target="_blank">Python</a>  <span class="spanele"> (Provided by Udemy)</span></li>
+                        <li class="edu1"><a href="https://www.credly.com/badges/8a060eb3-b27d-4482-998c-e30628e00657/linked_in_profile" target="_blank">Java Script Essentials</a>  <span class="spanele"> (Provided by Cisco Networking Academy)</span></li>
+                        <li class="edu1"><a href="/">HTML,CSS,JS</a>  <span class="spanele"> (Provided by PrepInsta)</span></li>
+                        <li class="edu1"><a href="/">GIT,GITHub</a>  <span class="spanele"> (Provided by PrepInsta)</span></li>
+                    </ul>
+                </div>
+                <div class="righsection5"><img class="educationimg" src="images/certificate.png"></div>
+            </div>
+        </section>
+        <hr>
+
+       
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element2', {
+            strings: ['Web Developer', 'Java Developer'],
+            typeSpeed: 75,
+            loop:true
+        });
+        var typed = new Typed('#element1', {
+            strings: ['Sahas H S'],
+            typeSpeed: 75
+        });
+        var typed = new Typed('#Education', {
+            strings: ['Education'],
+            typeSpeed: 75
+            ,loop:true
+        });
+        var typed = new Typed('#Skills', {
+            strings: ['Skill\'s'],
+            typeSpeed: 75,
+            loop:true
+        });
+        var typed = new Typed('#Certification', {
+            strings: ['Certification\'s'],
+            typeSpeed: 75,
+            loop:true
+        });
+        var typed = new Typed('#Project', {
+            strings: ['Project\'s'],
+            typeSpeed: 75,
+            loop:true
+        });
+
+        
+
+
+    </script>
+</body>
+
+</html>
