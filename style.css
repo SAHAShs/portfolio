@@ -2,14 +2,16 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
+
 body {
     background-color: rgb(24, 20, 90);
     color: white;
     font-family: 'Poppins', sans-serif;
-    
+
 }
+
 /* making nav items in single line*/
 nav {
     display: flex;
@@ -19,15 +21,17 @@ nav {
     height: 90px;
     background-color: rgb(34 34 34);
 }
+
 /* font size for name*/
 .left {
     font-size: 2rem;
-    
 }
-nav .left h1 .red{
+
+nav .left h1 .red {
     font-size: 3rem;
 }
-nav .left a{
+
+nav .left a {
     display: flex;
 }
 
@@ -51,7 +55,7 @@ nav ul li a,
     color: white;
     text-decoration: none;
 }
-    
+
 nav ul li a:hover,
 .leftsection2 ul li a:hover,
 .left a:hover,
@@ -69,9 +73,10 @@ nav ul li a:hover,
     justify-content: space-around;
     margin: 23px 0px;
     align-items: center;
-    
-    
+
+
 }
+
 /************************************************************/
 .secondsection {
     justify-content: space-around;
@@ -105,6 +110,7 @@ nav ul li a:hover,
 .seceducation .rigthsection3 {
     margin: 50px;
 }
+
 /***************************************************/
 .seceducation .leftsection3 {
     margin: 0px 0px 0px -63px;
@@ -159,18 +165,20 @@ nav ul li a:hover,
     margin: 94px -63px;
 }
 
-.secondrighsection .educationimg{
-    margin:  20px -12px;
+.secondrighsection .educationimg {
+    margin: 20px -12px;
     width: 50vf;
     height: 25vh;
     position: absolute;
 }
+
 .section5 .leftsectioncertification {
     margin: 0px 0px 0px -63px;
     display: inline-flex;
     flex-wrap: wrap;
     font-size: 1.2rem;
 }
+
 /*****************************************************/
 
 
@@ -209,7 +217,7 @@ hr {
 
 
 
-.righ{
+.righ {
     margin: 0px -92px 0px 107px;
 }
 
@@ -219,32 +227,35 @@ hr {
 
 
 /*****section-3**********/
-.section3skills{
+.section3skills {
     display: flex;
 }
 
-.section3skills>div{
+.section3skills>div {
     width: 40%;
     justify-content: space-around;
 }
-.section3skills .leftsectionskills{
+
+.section3skills .leftsectionskills {
     margin-left: 155px;
     font-size: 1.2rem;
-    
+
 }
-.section3skills .rightsectionskills{
+
+.section3skills .rightsectionskills {
     margin-left: 600px;
     margin-top: 30px;
-    
+
 }
-.skillsimage{
+
+.skillsimage {
     width: 50%;
     height: 70%;
 }
 
 
 /***********section-4*************/
-.section4 button{
+.section4 button {
     background-color: greenyellow;
     border-radius: 10%;
     border-right-color: black;
@@ -255,67 +266,298 @@ hr {
     margin-bottom: 8px;
 }
 
-.section4 button:hover{
+.section4 button:hover {
     background-color: red;
-   
+
 }
 
-.project-title{
+.project-title {
     font-size: 1.2rem;
     margin-left: 20px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.project-title:hover{
+.project-title:hover {
     color: yellow;
 }
 
-.project-description{
+.project-description {
     font-size: 0.8rem;
     margin-left: 30px;
-    margin-right:40px;
+    margin-right: 40px;
     margin-bottom: 20px;
     text-align: justify;
-    color: rgb(130, 123, 123);    
+    color: rgb(130, 123, 123);
 }
 
-.project-description a{
-    text-decoration:dotted;
+.project-description a {
+    text-decoration: dotted;
     color: rgb(255, 252, 252);
 }
 
-.project-description a:hover{
+.project-description a:hover {
     color: yellow;
 }
 
-.listofprojects{
+.listofprojects {
     padding-left: 120px;
     display: flex;
 }
-.listofprojects .col-1{
+
+.listofprojects .col-1 {
     width: 50%;
 }
-.listofprojects .col-2{
+
+.listofprojects .col-2 {
     width: 50%;
 }
 
 
 /******Cerifications******/
-.spanele{
+.spanele {
     font-size: 0.5rem;
-    color:gray;
+    color: gray;
 
 }
 
 /*********************footer*******************/
-.footer-disc{
+.footer-disc {
     display: flex;
 }
+
 .foot-img {
     height: 25px;
     margin-right: 10px;
 }
 
-.footerr ul li{
+.footerr ul li {
     list-style: none;
+}
+.mailid{
+    display: flex;
+}
+
+
+/****
+****
+
+
+****/
+/***************************************************/
+@media only screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        
+    }
+
+    body {
+        background-color: rgb(24, 20, 90);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*********header***********/
+    nav {
+        height: fit-content;
+        background-color: rgb(34 34 34);
+        display: block;
+        justify-content: center;
+    }
+    /* font size for name*/
+    .left {
+        font-size: 2rem;
+    }
+
+    nav .left h1 .red {
+        font-size: 3rem;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .righ {
+        margin: 0px 0px 0px 0px;
+    }
+    
+    nav ul li {
+        /* to access li using nav ui*/
+        list-style: none;
+        /* bullets will gone*/
+        margin: 0px 6px;
+    }
+    /*******section-2*******/
+    .educationimg1 {
+        display: none;
+    }
+
+    .leftsection2 ul li {
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .education1 {
+        width: fit-content;
+    }
+
+    /*******section-3****************/
+    .section3skills{
+        width: auto;
+    }
+    .rightsectionskills{
+        display: none;
+    }
+    .leftsectionskills{
+        justify-content: center;
+    }
+
+    .section3skills .leftsectionskills {
+        margin-left: 40px;
+        font-size: 0.8rem;
+    
+    }
+
+    .section3skills .rightsectionskills {
+       display: none;
+    }
+
+    
+    /**************section-1***********/
+    .header .left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    .rigthsection {
+        display: none;
+    }
+
+    .firstsection .leftsection {
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    .firstsection .rigthsection img {
+        display: none;
+    }
+
+    /**************footer***********/
+    .footer nav .right {
+        justify-content: center;
+    }
+
+    .footer nav {
+        width: 100%;
+        justify-content: center;
+        display: grid;
+        height: fit-content;
+    }
+
+    footer nav .left {
+        display: flex;
+    }
+
+    .footer nav ul {
+        display: block;
+    }
+
+    .footer .foot-img {
+        display: none;
+    }
+
+    .footer-disc {
+        display: contents;
+    }
+    .mailid,
+    .number{
+        justify-content: center;
+    }
+
+    /******************/
+    .educationimg{
+        display: none;
+    }
+    .section5 .leftsectioncertification {
+        margin: 0px 40px;
+        font-size: 0.8rem;
+    }
+    .section5{
+        width: auto;
+    }
+    /*****************8section-4*******************/
+    .listofprojects {
+        padding-left: 0px;
+        display: block;
+       
+    }
+    
+    .listofprojects .col-1 {
+        width: auto;
+    }
+    
+    .listofprojects .col-2 {
+        width: auto;
+    }
+    .project-title {
+        font-size: 0.8rem;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    .section4 button {
+        background-color: greenyellow;
+        border-radius: 10%;
+        border-right-color: black;
+        border-width: 3px;
+        border-style: hidden;
+        width: 11vw;
+        height: 20px;
+        margin-bottom: 8px;
+    }
+    .project-title:hover {
+        color: yellow;
+    }
+    
+    .project-description {
+        font-size: 0.6rem;
+        margin-left: 30px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
+        color: rgb(130, 123, 123);
+    }
+    
+    .project-description a {
+        text-decoration: dotted;
+        color: rgb(255, 252, 252);
+    }
+    
+    .project-description a:hover {
+        color: yellow;
+    }
+
+    .educationtitle{
+        font-size:large;
+    }
+ 
+    hr {
+        margin: 17px 0px;
+        height: 0.2px;
+        background-color: #b9a9a9;
+        border: 0;
+    }
+    .b1{
+        display: none;
+    }
 }
