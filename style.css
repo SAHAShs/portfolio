@@ -1,0 +1,321 @@
+/* flex makes item come in a single line*/
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: rgb(24, 20, 90);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* making nav items in single line*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* space between items in nav */
+    align-items: center;
+    height: 90px;
+    background-color: rgb(34 34 34);
+}
+/* font size for name*/
+.left {
+    font-size: 2rem;
+    
+}
+nav .left h1 .red{
+    font-size: 3rem;
+}
+nav .left a{
+    display: flex;
+}
+
+/*makeing ul in singke line*/
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    /* to access li using nav ui*/
+    list-style: none;
+    /* bullets will gone*/
+    margin: 0px 35px;
+}
+
+.left a,
+nav ul li a,
+.leftsection2 ul li a,
+.section5 ul li a {
+    color: white;
+    text-decoration: none;
+}
+    
+nav ul li a:hover,
+.leftsection2 ul li a:hover,
+.left a:hover,
+.section5 ul li a:hover {
+    /* bullets will gone*/
+    color: rgb(247, 255, 10);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0px;
+    align-items: center;
+    
+    
+}
+/************************************************************/
+.secondsection {
+    justify-content: space-around;
+    margin: 23px 0px;
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.educationtitle {
+    justify-content: center;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.seceducation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.seceducation .rigthsection3 {
+    margin: 50px;
+}
+/***************************************************/
+.seceducation .leftsection3 {
+    margin: 0px 0px 0px -63px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.secondsection .education1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.leftsection2 ul li,
+.leftsection3 ul li {
+    font-size: 1.2rem;
+}
+
+.rigthsection img {
+    width: 50vf;
+    height: 50vh;
+    margin: 70px;
+
+}
+
+.edu2,
+.edu1,
+.edu3 {
+    margin: 10px;
+}
+
+.educationimg1 {
+    width: 50vf;
+    height: 31vh;
+    margin: 0px;
+}
+
+.educationimg {
+    width: 50vf;
+    height: 31vh;
+    margin: 0px;
+    position: absolute;
+    margin: 141px -63px;
+}
+
+.section5 .educationimg {
+    width: 50vf;
+    height: 31vh;
+    margin: 0px;
+    position: absolute;
+    margin: 94px -63px;
+}
+
+.secondrighsection .educationimg{
+    margin:  20px -12px;
+    width: 50vf;
+    height: 25vh;
+    position: absolute;
+}
+.section5 .leftsectioncertification {
+    margin: 0px 0px 0px -63px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+/*****************************************************/
+
+
+.rigthsection3 {
+    position: static left;
+}
+
+hr {
+    margin: 19px 41px 24px 36px;
+    height: 1.2px;
+    background-color: #b9a9a9;
+    border: 0;
+}
+
+.red {
+    color: red;
+    /* color: blue;*/
+}
+
+.leftsection {
+    font-size: 2.8rem;
+}
+
+.heads {
+    display: flex;
+}
+
+.heads>div {
+    margin: 0px 60px;
+}
+
+.findme-1 {
+    display: flex;
+    margin: 9px;
+}
+
+
+
+.righ{
+    margin: 0px -92px 0px 107px;
+}
+
+
+
+
+
+
+/*****section-3**********/
+.section3skills{
+    display: flex;
+}
+
+.section3skills>div{
+    width: 40%;
+    justify-content: space-around;
+}
+.section3skills .leftsectionskills{
+    margin-left: 155px;
+    font-size: 1.2rem;
+    
+}
+.section3skills .rightsectionskills{
+    margin-left: 600px;
+    margin-top: 30px;
+    
+}
+.skillsimage{
+    width: 50%;
+    height: 70%;
+}
+
+
+/***********section-4*************/
+.section4 button{
+    background-color: greenyellow;
+    border-radius: 10%;
+    border-right-color: black;
+    border-width: 3px;
+    border-style: hidden;
+    width: 4vw;
+    height: 29px;
+    margin-bottom: 8px;
+}
+
+.section4 button:hover{
+    background-color: red;
+   
+}
+
+.project-title{
+    font-size: 1.2rem;
+    margin-left: 20px;
+    font-weight:bold;
+}
+
+.project-title:hover{
+    color: yellow;
+}
+
+.project-description{
+    font-size: 0.8rem;
+    margin-left: 30px;
+    margin-right:40px;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: rgb(130, 123, 123);    
+}
+
+.project-description a{
+    text-decoration:dotted;
+    color: rgb(255, 252, 252);
+}
+
+.project-description a:hover{
+    color: yellow;
+}
+
+.listofprojects{
+    padding-left: 120px;
+    display: flex;
+}
+.listofprojects .col-1{
+    width: 50%;
+}
+.listofprojects .col-2{
+    width: 50%;
+}
+
+
+/******Cerifications******/
+.spanele{
+    font-size: 0.5rem;
+    color:gray;
+
+}
+
+/*********************footer*******************/
+.footer-disc{
+    display: flex;
+}
+.foot-img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.footerr ul li{
+    list-style: none;
+}

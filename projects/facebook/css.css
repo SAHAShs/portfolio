@@ -1,0 +1,76 @@
+.login-main{
+    background-color: white;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-left: 25%; 
+    box-sizing: border-box;  
+}
+.heading2{
+    border-bottom:ridge;
+}
+#heading{
+    font-size:xx-large;
+    color: blue;
+    margin-top: 4%;
+}
+.heading1{
+    text-align: center;
+}
+#body1.contianer-fluid{
+    background-color: aliceblue ;
+}
+.heading2{
+    text-align: center;
+    color: gray;
+}
+.main{
+    border-bottom: 2%;
+}
+.row{
+    margin-top: 4%;
+}
+#acc.row{
+    padding-top: 20px;
+    margin-left: 170px;
+}
+#row1.row{
+    margin-left: 200px;
+    padding-top: 20px;
+
+}
+button{
+    background:#00a400;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    font-weight: bold!important;
+    letter-spacing: normal;
+    text-rendering: optimizelegibility;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif!important;
+}
+.form-control{
+    margin-top: 2%;
+}
+.date{
+    margin-top: 2%;
+}
+.gender{
+    margin-top: 2%;
+}
+
+
+
+
+
