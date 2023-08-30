@@ -6,9 +6,11 @@
 }
 
 body {
-    background-color: rgb(24, 20, 90);
+    /* background-color: rgb(24, 20, 90); */
+    background:linear-gradient(265deg, #07081d, #4d41a3);
     color: white;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -19,7 +21,7 @@ nav {
     /* space between items in nav */
     align-items: center;
     height: 90px;
-    background-color: rgb(34 34 34);
+    background:linear-gradient(203deg, #07081d, #4d41a3);
 }
 
 /* font size for name*/
@@ -352,19 +354,21 @@ hr {
     }
 
     body {
-        background-color: rgb(24, 20, 90);
+        background:linear-gradient(265deg, #07081d, #4d41a3);
         color: white;
         font-family: 'Poppins', sans-serif;
         width: fit-content;
         margin: 0;
         padding: 0;
+        /*background-image: url("1660460518902.jpg");*/
 
     }
 
     /*********header***********/
     nav {
         height: fit-content;
-        background-color: rgb(34 34 34);
+        /* background-color: rgb(34 34 34); */
+        background:linear-gradient(203deg, #07081d, #4d41a3);
         display: block;
         justify-content: center;
     }
