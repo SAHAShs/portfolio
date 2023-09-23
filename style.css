@@ -20,8 +20,10 @@ nav {
     justify-content: space-around;
     /* space between items in nav */
     align-items: center;
+    align-content: center;
     height: 90px;
     background:linear-gradient(203deg, #07081d, #4d41a3);
+    overflow: hidden;
 }
 
 /* font size for name*/
@@ -42,13 +44,27 @@ nav ul {
     display: flex;
     justify-content: center;
 }
+.des{
+    position: relative;
+    /* left: -3px; */
+    top: -5px;
+    font-size: 8px;
+    opacity: 0;
+}
 
 nav ul li {
     /* to access li using nav ui*/
     list-style: none;
+    display: grid;
     /* bullets will gone*/
     margin: 0px 35px;
 }
+nav ul li:hover{
+    scale: 1.2;
+    .des{
+    opacity: 1;
+}}
+
 
 .left a,
 nav ul li a,
@@ -56,6 +72,7 @@ nav ul li a,
 .section5 ul li a {
     color: white;
     text-decoration: none;
+    overflow: hidden;
 }
 
 nav ul li a:hover,
@@ -65,10 +82,8 @@ nav ul li a:hover,
     /* bullets will gone*/
     color: rgb(247, 255, 10);
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold;    */
 }
-
-
 
 .firstsection {
     display: flex;
@@ -78,6 +93,7 @@ nav ul li a:hover,
 
 
 }
+
 
 /************************************************************/
 .secondsection {
@@ -133,10 +149,10 @@ nav ul li a:hover,
 }
 
 .rigthsection img {
-    width: 50vf;
-    height: 50vh;
+    
+    width: 350px;
+    height: 300px;
     margin: 70px;
-
 }
 
 .edu2,
@@ -258,18 +274,23 @@ hr {
 
 /***********section-4*************/
 .section4 button {
-    background-color: greenyellow;
-    border-radius: 10%;
+    background-color: #CD1818;
+    border-radius: 10px;
     border-right-color: black;
-    border-width: 3px;
     border-style: hidden;
-    width: 4vw;
+    width: 15%;
     height: 29px;
     margin-bottom: 8px;
+    margin-left: 8px;
+    color: white;
 }
 
 .section4 button:hover {
-    background-color: red;
+    background-color: #FF6969;
+}
+.section4 button:active{
+    scale: 0.8;
+    background-color: #CD1818;
 
 }
 
@@ -300,11 +321,16 @@ hr {
 .project-description a:hover {
     color: yellow;
 }
+.project-description a:active {
+    color: red;
+    
+}
 
 .listofprojects {
     padding-left: 120px;
     display: flex;
 }
+
 
 .listofprojects .col-1 {
     width: 50%;
