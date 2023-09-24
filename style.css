@@ -7,7 +7,7 @@
 
 body {
     /* background-color: rgb(24, 20, 90); */
-    background:linear-gradient(265deg, #07081d, #4d41a3);
+    background: linear-gradient(265deg, #07081d, #4d41a3);
     color: white;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -22,7 +22,7 @@ nav {
     align-items: center;
     align-content: center;
     height: 90px;
-    background:linear-gradient(203deg, #07081d, #4d41a3);
+    background: linear-gradient(203deg, #07081d, #4d41a3);
     overflow: hidden;
 }
 
@@ -44,13 +44,24 @@ nav ul {
     display: flex;
     justify-content: center;
 }
-.des{
-    position: relative;
-    /* left: -3px; */
-    top: -5px;
+
+.des {
+    /* position: relative; */
     font-size: 8px;
-    opacity: 0;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    visibility: hidden;
+    width: 50px;
+    background-color: rgb(97, 93, 93);
+    color: #fff;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
 }
+
 
 nav ul li {
     /* to access li using nav ui*/
@@ -59,11 +70,14 @@ nav ul li {
     /* bullets will gone*/
     margin: 0px 35px;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     scale: 1.2;
-    .des{
-    opacity: 1;
-}}
+
+    .des {
+        visibility: visible;
+    }
+}
 
 
 .left a,
@@ -149,7 +163,7 @@ nav ul li a:hover,
 }
 
 .rigthsection img {
-    
+
     width: 350px;
     height: 300px;
     margin: 70px;
@@ -288,7 +302,8 @@ hr {
 .section4 button:hover {
     background-color: #FF6969;
 }
-.section4 button:active{
+
+.section4 button:active {
     scale: 0.8;
     background-color: #CD1818;
 
@@ -321,9 +336,10 @@ hr {
 .project-description a:hover {
     color: yellow;
 }
+
 .project-description a:active {
     color: red;
-    
+
 }
 
 .listofprojects {
@@ -361,7 +377,8 @@ hr {
 .footerr ul li {
     list-style: none;
 }
-.mailid{
+
+.mailid {
     display: flex;
 }
 
@@ -376,11 +393,11 @@ hr {
 
     * {
         margin: 0;
-        
+
     }
 
     body {
-        background:linear-gradient(265deg, #07081d, #4d41a3);
+        background: linear-gradient(265deg, #07081d, #4d41a3);
         color: white;
         font-family: 'Poppins', sans-serif;
         width: fit-content;
@@ -394,10 +411,11 @@ hr {
     nav {
         height: fit-content;
         /* background-color: rgb(34 34 34); */
-        background:linear-gradient(203deg, #07081d, #4d41a3);
+        background: linear-gradient(203deg, #07081d, #4d41a3);
         display: block;
         justify-content: center;
     }
+
     /* font size for name*/
     .left {
         font-size: 2rem;
@@ -406,21 +424,23 @@ hr {
     nav .left h1 .red {
         font-size: 3rem;
     }
-    
+
     nav ul {
         display: flex;
         justify-content: center;
     }
+
     .righ {
         margin: 0px 0px 0px 0px;
     }
-    
+
     nav ul li {
         /* to access li using nav ui*/
         list-style: none;
         /* bullets will gone*/
         margin: 0px 6px;
     }
+
     /*******section-2*******/
     .educationimg1 {
         display: none;
@@ -437,27 +457,29 @@ hr {
     }
 
     /*******section-3****************/
-    .section3skills{
+    .section3skills {
         width: auto;
     }
-    .rightsectionskills{
+
+    .rightsectionskills {
         display: none;
     }
-    .leftsectionskills{
+
+    .leftsectionskills {
         justify-content: center;
     }
 
     .section3skills .leftsectionskills {
         margin-left: 40px;
         font-size: 0.8rem;
-    
+
     }
 
     .section3skills .rightsectionskills {
-       display: none;
+        display: none;
     }
 
-    
+
     /**************section-1***********/
     .header .left {
         display: flex;
@@ -510,41 +532,47 @@ hr {
     .footer-disc {
         display: contents;
     }
+
     .mailid,
-    .number{
+    .number {
         justify-content: center;
     }
 
     /******************/
-    .educationimg{
+    .educationimg {
         display: none;
     }
+
     .section5 .leftsectioncertification {
         margin: 0px 40px;
         font-size: 0.8rem;
     }
-    .section5{
+
+    .section5 {
         width: auto;
     }
+
     /*****************8section-4*******************/
     .listofprojects {
         padding-left: 0px;
         display: block;
-       
+
     }
-    
+
     .listofprojects .col-1 {
         width: auto;
     }
-    
+
     .listofprojects .col-2 {
         width: auto;
     }
+
     .project-title {
         font-size: 0.8rem;
         margin-left: 20px;
         font-weight: bold;
     }
+
     .section4 button {
         background-color: greenyellow;
         border-radius: 10%;
@@ -555,10 +583,11 @@ hr {
         height: 20px;
         margin-bottom: 8px;
     }
+
     .project-title:hover {
         color: yellow;
     }
-    
+
     .project-description {
         font-size: 0.6rem;
         margin-left: 30px;
@@ -567,27 +596,28 @@ hr {
         text-align: justify;
         color: rgb(130, 123, 123);
     }
-    
+
     .project-description a {
         text-decoration: dotted;
         color: rgb(255, 252, 252);
     }
-    
+
     .project-description a:hover {
         color: yellow;
     }
 
-    .educationtitle{
-        font-size:large;
+    .educationtitle {
+        font-size: large;
     }
- 
+
     hr {
         margin: 17px 0px;
         height: 0.2px;
         background-color: #b9a9a9;
         border: 0;
     }
-    .b1{
+
+    .b1 {
         display: none;
     }
 }
