@@ -390,7 +390,6 @@ hr {
 ****/
 /***************************************************/
 @media only screen and (max-width: 600px) {
-
     * {
         margin: 0;
 
@@ -449,11 +448,11 @@ hr {
     .leftsection2 ul li {
         font-size: 0.6rem;
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 
     .education1 {
-        width: fit-content;
+        width: auto;
     }
 
     /*******section-3****************/
@@ -574,14 +573,16 @@ hr {
     }
 
     .section4 button {
-        background-color: greenyellow;
-        border-radius: 10%;
-        border-right-color: black;
+        background-color: rgb(255, 102, 47);
+        border-radius: 10px;
+        /* border-right-color: black; */
         border-width: 3px;
         border-style: hidden;
-        width: 11vw;
+        /* padding: 10px; */
+        width: 80px;
         height: 20px;
-        margin-bottom: 8px;
+        /* margin-top: 5px; */
+        /* margin-bottom: 8px; */
     }
 
     .project-title:hover {
