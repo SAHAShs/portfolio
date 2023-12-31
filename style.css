@@ -1,32 +1,38 @@
-/* flex makes item come in a single line*/
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
-    /* background-color: rgb(24, 20, 90); */
     background: linear-gradient(265deg, #07081d, #4d41a3);
     color: white;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-
 }
 
-/* making nav items in single line*/
-nav {
+header nav {
     display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
     justify-content: space-around;
-    /* space between items in nav */
     align-items: center;
     align-content: center;
     height: 90px;
+    width: 100%;
+    background: linear-gradient(203deg, #07081d, #4d41a3);
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 90px;
+    width: 100%;
     background: linear-gradient(203deg, #07081d, #4d41a3);
     overflow: hidden;
 }
 
-/* font size for name*/
 .left {
     font-size: 2rem;
 }
@@ -39,44 +45,19 @@ nav .left a {
     display: flex;
 }
 
-/*makeing ul in singke line*/
 nav ul {
     display: flex;
     justify-content: center;
 }
-
-.des {
-    /* position: relative; */
-    font-size: 8px;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
-    visibility: hidden;
-    width: 50px;
-    background-color: rgb(97, 93, 93);
-    color: #fff;
-    text-align: center;
-    padding: 3px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-
 nav ul li {
-    /* to access li using nav ui*/
     list-style: none;
     display: grid;
-    /* bullets will gone*/
     margin: 0px 35px;
 }
 
 nav ul li:hover {
     scale: 1.2;
-
-    .des {
-        visibility: visible;
-    }
+    filter: drop-shadow(0px 0px 10px white);
 }
 
 
@@ -89,35 +70,62 @@ nav ul li a,
     overflow: hidden;
 }
 
-nav ul li a:hover,
+nav ul li:hover,
 .leftsection2 ul li a:hover,
 .left a:hover,
 .section5 ul li a:hover {
-    /* bullets will gone*/
     color: rgb(247, 255, 10);
     text-decoration: none;
-    /* font-weight: bold;    */
 }
 
 .firstsection {
     display: flex;
     justify-content: space-around;
-    margin: 23px 0px;
+    margin: 150px 0px 0px 0px;
     align-items: center;
-
-
 }
 
+.firstsection .leftsection {
+    width: 50%;
+    margin-left: 100px;
+}
 
-/************************************************************/
+#top {
+    margin-top: -8px;
+}
+
+/***************************************************/
+.aboutimg {
+    position: relative;
+    z-index: -1;
+    width: 500px;
+    height: 400px;
+    filter: drop-shadow(1px 0px 14px grey);
+}
+
+.about-me-content {
+    margin: 10px 40px 10px 50px;
+    text-wrap: wrap;
+    width: 55%;
+}
+
+.about-me-content p {
+    margin: 10px 0px;
+}
+
+.rightsection2-aboutme {
+    width: 45%;
+}
+
+.aboutsection {
+    margin-left: 40px;
+} */
+
+/**********************************************************/
 .secondsection {
     justify-content: space-around;
     margin: 23px 0px;
     align-items: center;
-}
-
-.firstsection>div {
-    width: 30%;
 }
 
 .educationtitle {
@@ -154,7 +162,6 @@ nav ul li a:hover,
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .leftsection2 ul li,
@@ -163,10 +170,12 @@ nav ul li a:hover,
 }
 
 .rigthsection img {
-
-    width: 350px;
-    height: 300px;
-    margin: 70px;
+    width: 550px;
+    height: 450px;
+    position: relative;
+    filter: drop-shadow(1px 0px 14px grey);
+    margin-right: 60px;
+    z-index: -1;
 }
 
 .edu2,
@@ -209,7 +218,7 @@ nav ul li a:hover,
     display: inline-flex;
     flex-wrap: wrap;
     font-size: 1.2rem;
-}
+} 
 
 /*****************************************************/
 
@@ -227,7 +236,6 @@ hr {
 
 .red {
     color: red;
-    /* color: blue;*/
 }
 
 .leftsection {
@@ -246,18 +254,6 @@ hr {
     display: flex;
     margin: 9px;
 }
-
-
-
-.righ {
-    margin: 0px -92px 0px 107px;
-}
-
-
-
-
-
-
 /*****section-3**********/
 .section3skills {
     display: flex;
@@ -271,13 +267,11 @@ hr {
 .section3skills .leftsectionskills {
     margin-left: 155px;
     font-size: 1.2rem;
-
 }
 
 .section3skills .rightsectionskills {
     margin-left: 600px;
     margin-top: 30px;
-
 }
 
 .skillsimage {
@@ -288,7 +282,7 @@ hr {
 
 /***********section-4*************/
 .section4 button {
-    background-color: #CD1818;
+    background-color: #aba6a6;
     border-radius: 10px;
     border-right-color: black;
     border-style: hidden;
@@ -300,13 +294,13 @@ hr {
 }
 
 .section4 button:hover {
-    background-color: #FF6969;
+    background-color: #ffffff;
+    color:black;
 }
 
 .section4 button:active {
     scale: 0.8;
     background-color: #CD1818;
-
 }
 
 .project-title {
@@ -339,7 +333,6 @@ hr {
 
 .project-description a:active {
     color: red;
-
 }
 
 .listofprojects {
@@ -361,7 +354,6 @@ hr {
 .spanele {
     font-size: 0.5rem;
     color: gray;
-
 }
 
 /*********************footer*******************/
@@ -380,245 +372,153 @@ hr {
 
 .mailid {
     display: flex;
-}
-
-
-/****
-****
-
-
-****/
-/***************************************************/
+} 
 @media only screen and (max-width: 600px) {
-    * {
-        margin: 0;
-
-    }
-
-    body {
-        background: linear-gradient(265deg, #07081d, #4d41a3);
-        color: white;
-        font-family: 'Poppins', sans-serif;
+    body{
         width: fit-content;
-        margin: 0;
-        padding: 0;
-        /*background-image: url("1660460518902.jpg");*/
-
+        margin: auto;
+        background-attachment: fixed;
     }
-
-    /*********header***********/
-    nav {
-        height: fit-content;
-        /* background-color: rgb(34 34 34); */
-        background: linear-gradient(203deg, #07081d, #4d41a3);
-        display: block;
+    header nav {
+        flex-direction: column;
+        position: unset;
+        height: 1100px;
+        font-size: 4rem;
+        /* width: auto; */
         justify-content: center;
     }
-
-    /* font size for name*/
-    .left {
-        font-size: 2rem;
-    }
-
-    nav .left h1 .red {
-        font-size: 3rem;
+    nav .left{
+        font-size: 4rem;
     }
 
     nav ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    .righ {
-        margin: 0px 0px 0px 0px;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
     }
 
     nav ul li {
-        /* to access li using nav ui*/
-        list-style: none;
-        /* bullets will gone*/
-        margin: 0px 6px;
-    }
-
-    /*******section-2*******/
-    .educationimg1 {
-        display: none;
-    }
-
-    .leftsection2 ul li {
-        font-size: 0.6rem;
-        display: flex;
-        justify-content: left;
-    }
-
-    .education1 {
-        width: auto;
-    }
-
-    /*******section-3****************/
-    .section3skills {
-        width: auto;
-    }
-
-    .rightsectionskills {
-        display: none;
-    }
-
-    .leftsectionskills {
-        justify-content: center;
-    }
-
-    .section3skills .leftsectionskills {
-        margin-left: 40px;
-        font-size: 0.8rem;
-
-    }
-
-    .section3skills .rightsectionskills {
-        display: none;
-    }
-
-
-    /**************section-1***********/
-    .header .left {
-        display: flex;
-        justify-content: center;
+        margin: 10px 0;
     }
 
     .firstsection {
-        display: flex;
-        justify-content: center;
-        width: auto;
+        margin: 50px 10px 10px 10px;
+        flex-direction: column;
+        font-size: 0.1rem;
+        height: 900px;
     }
-
-    .rigthsection {
-        display: none;
+    .firstsection img{
+       width: 600px;
+       height: 600px;
+       margin-top: 90px;
+       margin-left: -5px;
+       margin-right: 0px;
     }
-
     .firstsection .leftsection {
-        font-size: 1.2rem;
-        width: auto;
-    }
-
-    .firstsection .rigthsection img {
-        display: none;
-    }
-
-    /**************footer***********/
-    .footer nav .right {
-        justify-content: center;
-    }
-
-    .footer nav {
         width: 100%;
-        justify-content: center;
-        display: grid;
-        height: fit-content;
+        margin-left: 20px;
+        font-size: 3rem;
     }
-
-    footer nav .left {
-        display: flex;
+    .firstsection .leftsection span{
+        display: inline;
+        /* font-size: 2.6rem; */
     }
-
-    .footer nav ul {
+    .firstsection .leftsection div{
         display: block;
+       
     }
-
-    .footer .foot-img {
+    .aboutimg {
         display: none;
     }
-
-    .footer-disc {
-        display: contents;
+    .educationtitle{
+        font-size: 4rem;
+    }
+    .aboutsection {
+        margin-left: 10px;
+    }
+    .about-me-content {
+        width: auto;
+        margin: 10px 20px;
+        text-align: center;
+        font-size: 1.5rem;
     }
 
-    .mailid,
-    .number {
-        justify-content: center;
-    }
-
-    /******************/
-    .educationimg {
-        display: none;
-    }
-
-    .section5 .leftsectioncertification {
-        margin: 0px 40px;
-        font-size: 0.8rem;
-    }
-
-    .section5 {
+    .rightsection2-aboutme {
         width: auto;
     }
+    .section3skills .rightsectionskills{
+        display: none;
+    }
+    .educationimg1,.educationimg{
+        display: none;
+    }
 
-    /*****************8section-4*******************/
-    .listofprojects {
+    .section3skills .leftsectionskills{
+        margin-left: 50px;
+        font-size: 3rem;
+        
+    }
+    .section3skills .leftsectionskills ul li{
+        list-style: none;
+    }
+
+    .section3skills>div{
+        width: auto;
+    }
+    .listofprojects{
+        margin-left: 30px;
         padding-left: 0px;
         display: block;
-
     }
-
-    .listofprojects .col-1 {
+    .listofprojects .col-1,.listofprojects .col-2{
         width: auto;
     }
-
-    .listofprojects .col-2 {
-        width: auto;
+    .project-title{
+        font-size: 2.8rem;
     }
-
-    .project-title {
-        font-size: 0.8rem;
-        margin-left: 20px;
-        font-weight: bold;
+    .project-description{
+        font-size: 1.2rem;
     }
-
+    
     .section4 button {
-        background-color: rgb(255, 102, 47);
-        border-radius: 10px;
-        /* border-right-color: black; */
-        border-width: 3px;
-        border-style: hidden;
-        /* padding: 10px; */
-        width: 80px;
-        height: 20px;
-        /* margin-top: 5px; */
-        /* margin-bottom: 8px; */
-    }
-
-    .project-title:hover {
-        color: yellow;
-    }
-
-    .project-description {
-        font-size: 0.6rem;
-        margin-left: 30px;
-        margin-right: 40px;
-        margin-bottom: 20px;
-        text-align: justify;
-        color: rgb(130, 123, 123);
-    }
-
-    .project-description a {
-        text-decoration: dotted;
-        color: rgb(255, 252, 252);
-    }
-
-    .project-description a:hover {
-        color: yellow;
-    }
-
-    .educationtitle {
+        background: none;
+        color: #aba6a6;
         font-size: large;
     }
-
-    hr {
-        margin: 17px 0px;
-        height: 0.2px;
-        background-color: #b9a9a9;
-        border: 0;
+    .section4 button:hover {
+        color:white;
+        background: none;
+    }
+    
+    .section4 button:active {
+        scale: 0.8;
+        background: none;
+    }
+    .leftsection2 ul li{
+        font-size: 2.1rem;
+    }
+    .section5 .leftsectioncertification {
+        margin: 0px 0px 0px 30px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        font-size: 2rem;
+    }
+    .spanele{
+        font-size: 0.8rem;
+    }
+    footer nav{
+        flex-direction: column;
+        height: auto;
+    }
+    footer nav ul{
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .foot-img {
+        height: 50px;
+        margin-right: 33px;
     }
 
-    .b1 {
-        display: none;
-    }
 }

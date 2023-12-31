@@ -5,65 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAHAS H S</title>
-    <link rel="icon" href="images/S.png">
+    <link rel="icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<!----
-background-image:url("1660460518902.jpg");
-background-position-x: center;
-background-size:100vw;
--->
 
 <body>
     <!-----header-------------->
-    <header class="header">
+    <header id="header" class="Header">
         <nav>
-            <div class="left"><a href="">
+            <div class="left"><a>
                     <h1 class="red"><strong>S</strong></h1>
                     <h1>ahas</h1>
                 </a></div>
             <div class="righ">
+
                 <ul>
-                    <li class="home r1"><a href="">Home</a></li>
-                    <li class="phone-call r1"><a href="Sahas_H_S-ECE.pdf" download="" target="_blank"><img
-                                class="foot-img" src="images/cv (1).png"></a><span class="des">Resume</span></li>
-                    <li class="r2"><a href="https://github.com/" target="_blank"><img class="foot-img"
-                                src="images/github.png"></a><span class="des">GitHub</span>
-                    </li>
-                    <li class="r1"><a href="https://instagram.com/sahas_gowda?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
-                            target="_blank"><img src="images/instagram.png" alt="" class="foot-img"></a><span class="des">Instagram</span></li>
-                    <li class="r2"><a href="https://www.linkedin.com/in/sahas-h-s-9a833b247/" target="_blank"><img
-                                class="foot-img" src="images/linkedin.png"></a><span class="des">Linkedin</span></li>
-                    <li class="r2"><a href="https://www.hackerrank.com/sahasgowda81" target="_blank"><img
-                                class="foot-img" src="images/hackerrank_logo-21e2867566.svg"></a><span class="des">HackerRank</span></li>
+                    <li class="home r1" id="homeLink">Home</li>
+                    <li class="home r1" id="educationLink">Education</li>
+                    <li id="skillsLink">Skills</li>
+                    <li id="projectsLink">Projects</li>
+                    <li id="certificationLink">Certificates</li>
+                    <li id="aboutLink">About me</li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <!-----1st look-------------->
-        <section class="firstsection">
+        <section id="firstsection" class="firstsection">
             <div class="leftsection">
                 <div>Hello,</div>
                 I am
                 <span class="red"><b><span id="element1"></span></b></span>
-                <div>I am a </div>
+
+
                 <div class="red">
+                    <div style="color: white; display: inline;">I am a </div>
                     <strong>
                         <span id="element2"></span>
                     </strong>
                 </div>
             </div>
             <div class="rigthsection">
-                <img src="images/main.png.png">
+                <!-- <img src="images/main.png.png"> -->
+                <img src="images/sahas.png" alt="profilepic" srcset="">
             </div>
         </section>
-        <hr>
+        <hr id="top">
+        <!-----about me-------------->
+        <section id="aboutsection" class="secondsection">
+            <div class="educationtitle"><span id="AboutMe"></span></div>
+            <hr>
+            <div class="education1 aboutsection">
+                <div class="about-me-content">
+                    <p>Hello, I'm <strong>Sahas H S</strong>, a passionate and dedicated individual with a keen interest
+                        in technology and web development.</p>
+
+                    <p>Graduate with Bachelor's degree in<strong> Electronics and Communication Engineering</strong>
+                        from PESITM, Shivamogga.</p>
+                    <p>As a <strong>Web Developer</strong> and <strong>Java Developer</strong>, I enjoy creating
+                        innovative
+                        and user-friendly solutions.</p>
+                    <p>Aside from coding, I am an active learner, always exploring new technologies and seeking
+                        opportunities
+                        for growth. I believe in the power of continuous learning and the impact it can have on personal
+                        and professional development.</p>
+                    <p>Feel free to explore my portfolio to learn more about my projects, skills, and certifications. If
+                        you
+                        have any inquiries or collaboration opportunities, please don't hesitate to reach out to me
+                        through
+                        email at <a style="color:yellow" href="mailto:sahasgowda81@gmail.com">sahasgowda81@gmail.com</a>
+                        or connect with me on
+                        <a style="color:yellow" href="https://www.linkedin.com/in/sahas-h-s-9a833b247/"
+                            target="_blank">LinkedIn</a>.
+                    </p>
+                </div>
+                <div class="rightsection2 rightsection2-aboutme">
+                    <img class="aboutimg" src="images/sahas.png">
+                </div>
+            </div>
+        </section>
+        <hr id="top">
         <!-----Eduacation-------------->
-        <section class="secondsection">
+        <section id="secondsection" class="secondsection">
             <div class="educationtitle"><span id="Education"></span></div>
             <hr>
             <div class="education1">
@@ -105,7 +132,7 @@ background-size:100vw;
         </section>
         <hr>
         <!-----Skills-------------->
-        <section class="section3">
+        <section id="section3" class="section3">
             <div class="educationtitle"><span id="Skills"></span></div>
             <hr>
             <div class="section3skills">
@@ -115,7 +142,7 @@ background-size:100vw;
                         <li class="edu1">C Programming</li>
                         <li class="edu1">MySQL</li>
                         <li class="edu1">HTML,CSS,JS</li>
-                        <li class="edu1">GIT,GITHub</li>
+                        <li class="edu1">Spring Boot, MVC</li>
                         <li class="edu1">Basic PHP</li>
                     </ul>
                 </div>
@@ -126,7 +153,7 @@ background-size:100vw;
         </section>
         <hr>
         <!-----projects-------------->
-        <section class="section4">
+        <section id="section4" class="section4">
             <div class="educationtitle"><span id="Project"></span></div>
             <hr>
             <div class="listofprojects">
@@ -135,7 +162,10 @@ background-size:100vw;
                         Geo Fencing Response System as a Life Saver
                     </div>
                     <div class="project-description">
-                        <button onclick="displayText('textFieldp1','buttonp1')" id="buttonp1">show</button>
+                        <button onclick="displayText('textFieldp1','buttonp1')" id="buttonp1">show</button> <a href="https://tijer.org/certificatemanager.php?a_rid=103085" target="_blank"><button
+                            type="submit">Certificate</button></a>
+                    <a href="https://tijer.org/papers/TIJER2304390.pdf" target="_blank"><button
+                            type="submit">Publication</button></a>
                         <div id="textFieldp1" style="display: none;">
                             A project called the Geofencing Response System was created to make it easier for emergency
                             vehicles like ambulances and fire engines to manoeuvre through crowded urban areas' high
@@ -147,12 +177,7 @@ background-size:100vw;
                             in
                             emergency scenarios as well as its design, development, and testing.
                         </div>
-                        <a href="https://tijer.org/certificatemanager.php?a_rid=103085" target="_blank"><button
-                            type="submit">Certificate</button></a>
-                    <a href="https://tijer.org/papers/TIJER2304390.pdf" target="_blank"><button
-                            type="submit">Publication</button></a>
-                        <!-- <div class="code"><a href="projects/geo-fencing/maincode.py" target="_blank">Click for code</a>
-                        </div> -->
+                       
                     </div>
 
                     <div class="project-title">
@@ -180,8 +205,6 @@ background-size:100vw;
                             or a
                             person in general and a warning to people who go along with providing an automatic buzzer.
                         </div>
-                        <!-- <div class="code"><a href="projects/over-speed-vehicle-detector.docx" download="none"
-                                target="_blank">Click for code</a></div> -->
                     </div>
 
 
@@ -197,7 +220,6 @@ background-size:100vw;
                             Classic
                             snake game which we are played in old keypad Phones.
                         </div>
-                        <!-- <div class="code"><a href="projects/snake.py" target="_blank">Click for code</a></div> -->
                     </div>
                     <div class="project-title">
                         Water Billing System
@@ -211,97 +233,161 @@ background-size:100vw;
                             end of 6th semester of Engineering. This GUI system provides login and signIn option for
                             users and allows user to generate their water bills.
                         </div>
-                        <!-- <div class="code"><a href="projects/water billing system/water billing system.py"
-                                download="none" target="_blank">Click for code</a></div> -->
                     </div>
                     <div class="project-title">
                         Portfolio Website
                     </div>
                     <div class="project-description">
-                        <button onclick="displayText('textFieldp11','buttonp11')" id="buttonp11">show</button><a href="https://sahashs.github.io/PortfolioV2/" target="_blank"><button >visit</button></a>
+                        <button onclick="displayText('textFieldp11','buttonp11')" id="buttonp11">show</button><a
+                            href="https://sahashs.github.io/PortfolioV2/" target="_blank"><button>visit</button></a><a
+                            href="https://github.com/SAHAShs/PortfolioV2" target="_blank"><button>GITHub</button></a>
                         <div id="textFieldp11" style="display: none;">
-                            Created using html,css, typed scripts, non responsive webiste. Assignment provided in Tap Academy.
+                            Created using html,css, typed scripts, non responsive webiste. Assignment provided in Tap
+                            Academy.
+                        </div>
+                    </div>
+
+                    <div class="project-title">
+                        Sign In & Sign Up
+                    </div>
+                    <div class="project-description">
+                        <button onclick="displayText('textFieldp13','buttonp13')" id="buttonp13">show</button><a
+                            href="https://youtu.be/Wy153og-SR4" target="_blank"><button>Watch</button></a><a
+                            href="https://github.com/SAHAShs/Login_Register_Servlet"
+                            target="_blank"><button>GITHub</button></a>
+                        <div id="textFieldp13" style="display: none;">
+                            Login and Register or Signin and Signup Implimentation, project created using JSP, CSS,
+                            JAVA, Servlet Classes, JDBC Connectivity with MySQL Database.
+                            Project impliments the validation of user login and impliments the validation of
+                            registration of user,
+                            stores data to MySql database.
                         </div>
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="project-title">
-                        Facebook Clone 
+                        Facebook Clone
                     </div>
                     <div class="project-description">
                         <button onclick="displayText('textFieldp5','buttonp5')" id="buttonp5">show</button>
-                        <!-- <a href="" target="_blank"><button disabled>visit</button></a> -->
+                        <a href="projects/facebook/index.html" target="_blank"><button>visit</button></a>
                         <div id="textFieldp5" style="display: none;">
-                            clone of FaceBook login and Register page. cant give link to it beacuse of phising detection by google.if you really want to visit mail me!
+                            clone of FaceBook login and Register page. cant give link to it beacuse of phising detection
+                            by google.if you really want to visit mail me!
                         </div>
                     </div>
 
 
-                    <div class="project-title">
+                    <!-- <div class="project-title">
                         Spotify Playlist clone
                     </div>
                     <div class="project-description">
                         <button onclick="displayText('textFieldp6','buttonp6')" id="buttonp6">show</button>
-                        <!-- <a href="" target="_blank"><button disabled>visit</button></a> -->
+                        <a href="" target="_blank"><button disabled>visit</button></a>
                         <div id="textFieldp6" style="display: none;">
                             Clone of Spotify playlist. Created with the reference of PrepInsta.
                             Cant host this due to memory issue.
                         </div>
-                        <!-- <div class="code"><a href="" target="_blank">Click for code</a></div> -->
-                    </div>
-                    <div class="project-title">
+                        <div class="code"><a href="" target="_blank">Click for code</a></div>
+                    </div> <div class="project-title">
                         Phone Pay Web Clone
                     </div>
                     <div class="project-description">
                         <button onclick="displayText('textFieldp4','buttonp4')" id="buttonp4">show</button>
-                        <!-- <a href="" target="_blank"><button disabled>visit</button></a> -->
+                        <a href="" target="_blank"><button disabled>visit</button></a>
                         <div id="textFieldp4" style="display: none;">
                             Clone of Phone Pay Website. Created with the reference of PrepInsta. Contians the main page
                             of Phone Pay.Cant host this due to Phising detection issue.
                         </div>
-                        <!-- <div class="code"><a href="" target="_blank">Click for code</a></div> -->
-                    </div>
+                        <div class="code"><a href="" target="_blank">Click for code</a></div>
+                    </div> -->
                     <div class="project-title">
                         Contact Saver
                     </div>
                     <div class="project-description">
-                        <button onclick="displayText('textFieldp8','buttonp8')" id="buttonp8">show</button><a href="http://contacts.infinityfreeapp.com/" target="_blank"><button>visit</button></a>
+                        <button onclick="displayText('textFieldp8','buttonp8')" id="buttonp8">show</button><a
+                            href="http://contacts.infinityfreeapp.com/" target="_blank"><button>visit</button></a><a
+                            href="https://github.com/SAHAShs/contactSaver" target="_blank"><button>GitHub</button></a>
                         <div id="textFieldp8" style="display: none;">
-                            Contact saver site is made to save important contacts, which can be used when you dont want to save contacts to phone or google. this is done to examine "CRUD" operation. yess! you guessed right cred means Create, Read, Update and Delete. these are some operations in sql. this site is created using html css for Font-End for backend PHP is used.
+                            Contact saver site is made to save important contacts, which can be used when you dont want
+                            to save contacts to phone or google. this is done to examine "CRUD" operation. yess! you
+                            guessed right cred means Create, Read, Update and Delete. these are some operations in sql.
+                            this site is created using html css for Font-End for backend PHP is used.
                         </div>
-                        <!-- <div class="code"><a href="" target="_blank">Click for code</a></div> -->
-                    </div> 
+
+                    </div>
                     <div class="project-title">
                         To-Do List
                     </div>
                     <div class="project-description">
-                        <button onclick="displayText('textFieldp9','buttonp9')" id="buttonp9">show</button><a href="https://sahashs.github.io/ToDoList/" target="_blank"><button>visit</button></a>
+                        <button onclick="displayText('textFieldp9','buttonp9')" id="buttonp9">show</button><a
+                            href="https://sahashs.github.io/ToDoList/" target="_blank"><button>visit</button></a><a
+                            href="https://github.com/SAHAShs/ToDoList" target="_blank"><button>GitHub</button></a>
                         <div id="textFieldp9" style="display: none;">
-                            A simple To-Do list web application is designed to help users manage tasks by allowing them to input task names and due dates. The application provides a list of tasks with a corresponding delete button for each task. Here's a description of its key features: 1. Task Input: Users can enter a task name in a text input field. Users can also specify a due date for the task using a date picker or a text input. 2. Add Task Button: After entering the task name and due date, users can click an "Add Task" button to add the task to the list. 3. Task List: Below the input section, there is a list that displays all the tasks. Each task is displayed as a list item with the task name and its due date. 4. Delete Button: Next to each task in the list, there is a "Delete" button. Clicking the "Delete" button removes the respective task from the list.
+                            A simple To-Do list web application is designed to help users manage tasks by allowing them
+                            to input task names and due dates. The application provides a list of tasks with a
+                            corresponding delete button for each task. Here's a description of its key features: 1. Task
+                            Input: Users can enter a task name in a text input field. Users can also specify a due date
+                            for the task using a date picker or a text input. 2. Add Task Button: After entering the
+                            task name and due date, users can click an "Add Task" button to add the task to the list. 3.
+                            Task List: Below the input section, there is a list that displays all the tasks. Each task
+                            is displayed as a list item with the task name and its due date. 4. Delete Button: Next to
+                            each task in the list, there is a "Delete" button. Clicking the "Delete" button removes the
+                            respective task from the list.
                         </div>
-                        <!-- <div class="code"><a href="" target="_blank">Click for code</a></div> -->
-                    </div> 
+
+                    </div>
                     <div class="project-title">
                         Weather-Site
                     </div>
                     <div class="project-description">
-                        <button onclick="displayText('textFieldp10','buttonp10')" id="buttonp10">show</button><a href="https://sahashs.github.io/weathersite/" target="_blank"><button>visit</button></a>
+                        <button onclick="displayText('textFieldp10','buttonp10')" id="buttonp10">show</button><a
+                            href="https://sahashs.github.io/weathersite/" target="_blank"><button>visit</button></a><a
+                            href="https://github.com/SAHAShs/weathersite" target="_blank"><button>GITHub</button></a>
                         <div id="textFieldp10" style="display: none;">
-                            "WeatherApp," Clone of Weather websites created using HTML5, CSS, JavaScript and Open Weather API.
+                            "WeatherApp," Clone of Weather websites created using HTML5, CSS, JavaScript and Open
+                            Weather API.
                         </div>
-                        <!-- <div class="code"><a href="" target="_blank">Click for code</a></div> -->
-                    </div>     
+
+                    </div>
+
+                    <div class="project-title">
+                        Employee Vaccine Protal
+                    </div>
+                    <div class="project-description">
+                        <button onclick="displayText('textFieldp12','buttonp12')" id="buttonp12">show</button><a
+                            href="https://youtu.be/kWorKp_Sc_M" target="_blank"><button>Watch</button></a><a
+                            href="https://github.com/SAHAShs/Vaccine_App_Spring_boot"
+                            target="_blank"><button>GitHub</button></a>
+                        <a href="https://sahashs.github.io/Vaccine_App_Spring_boot_documentation/"
+                            target="_blank"><button>Document</button></a>
+                        <div id="textFieldp12" style="display: none;">
+                            Hi!, the Vaccination Drive Application,a demonstration project highlighting the capabilities
+                            of a vaccination portal tailored for employees. Built using the latest technologies,
+                            including Spring Boot 3.2 and Java 17,this portal illustrates how organizations can
+                            streamline the vaccination registration process for their workforce and enables employees to
+                            seamlessly register for the upcoming vaccination drive. For More Detials see <a
+                                href="https://sahashs.github.io/Vaccine_App_Spring_boot_documentation/"
+                                target="_blank">Documentation</a>.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <hr>
         <!-----Certifications-------------->
-        <section class="section5">
+        <section id="section5" class="section5">
             <div class="educationtitle"><span id="Certification"></span></div>
             <hr>
             <div class="seceducation">
                 <div class="leftsectioncertification">
                     <ul>
+                        <li class="edu1"><a href="" target="_blank">Full Stack Web Development</a> <span
+                                class="spanele"> (Provided by Tap Academy)</span></li>
+                        <li class="edu1"><a href="" target="_blank">50 Days of SQL</a> <span
+                                class="spanele"> (Provided by Codedamn)(<a href="https://www.youtube.com/playlist?list=PLtT-IEfbOOEW60LwOVCJM6SxAQ_gch5A4">Watch on youtube</a>)</span></li>
+                                <li class="edu1"><a href="" target="_blank">30 Days of JAVA</a> <span
+                                    class="spanele"> (Provided by Codedamn)(<a href="https://www.youtube.com/playlist?list=PLtT-IEfbOOEXFW1tnzTgqoysWdjgj9vQV">Watch on youtube</a>)</span></li>
                         <li class="edu1"><a
                                 href="https://files.codingninjas.in/certi_image42871153a4ffc665a6893d35e44bce0e7b8eed.jpg"
                                 target="_blank">OOPs in Java</a> <span class="spanele"> (Provided by Coding
@@ -340,20 +426,31 @@ background-size:100vw;
         <footer class="footer">
             <nav>
                 <div class="left">
-                    <a href="">
+                    <a>
                         <h1 class="red"><strong>S</strong></h1>
                         <h1>ahas</h1>
                     </a>
                 </div>
                 <div class="right">
                     <ul class="footer-list">
-                        <li><a href="" class="mailid    ">Go to Top!</a></li>
                         <li class="footer-disc"><a href="mailto:sahasgowda81@gmail.com" class="mailid"><img
                                     class="foot-img" src="images/gmail.png">
-                                <p>E-Mail</p>
                             </a></li>
-                        <li class="footer-disc"><img src="images/receiver.png" class="foot-img"><a href="tel:7760694961"
-                                class="mailid">+91 - 7760694961</a></li>
+
+                        <li class="phone-call r1"><a href="Sahas_H_S-ECE.pdf" download="" target="_blank"><img
+                                    class="foot-img" src="images/cv (1).png"></a></li>
+                        <li class="r2"><a href="https://github.com/" target="_blank"><img class="foot-img"
+                                    src="images/github.png"></a>
+                        </li>
+                        <li class="r1"><a
+                                href="https://instagram.com/sahas_gowda?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                                target="_blank"><img src="images/instagram.png" alt="" class="foot-img"></a></li>
+                        <li class="r2"><a href="https://www.linkedin.com/in/sahas-h-s-9a833b247/" target="_blank"><img
+                                    class="foot-img" src="images/linkedin.png"></a></li>
+                        <li class="r2"><a href="https://www.hackerrank.com/sahasgowda81" target="_blank"><img
+                                    class="foot-img" src="images/hackerrank_logo-21e2867566.svg"></a></li>
+                        <li class="r2"><a href="https://youtube.com/@Sahas_H_S?si=tjvm5m70vIUjZPfO" target="_blank"><img
+                                    class="foot-img" src="images/youtube.png"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -366,129 +463,55 @@ background-size:100vw;
         var typed = new Typed('#element2', {
             strings: ['Web Developer', 'Java Developer'],
             typeSpeed: 75,
-            loop: true
+            loop: true,
+            showCursor: true,
+            cursorChar: '_'
         });
         var typed = new Typed('#element1', {
             strings: ['Sahas H S'],
+            typeSpeed: 75,
+            loop: true,
+            showCursor: true,
+            cursorChar: '_'
+        });
+        var typed = new Typed('#AboutMe', {
+            strings: ['About Me'],
             typeSpeed: 75
+            , loop: true,
+            showCursor: true,
+            cursorChar: '_'
         });
         var typed = new Typed('#Education', {
             strings: ['Education'],
             typeSpeed: 75
-            , loop: true
+            , loop: true,
+            showCursor: true,
+            cursorChar: '_'
         });
         var typed = new Typed('#Skills', {
             strings: ['Skill\'s'],
             typeSpeed: 75,
-            loop: true
+            loop: true,
+            showCursor: true,
+            cursorChar: '_'
         });
         var typed = new Typed('#Certification', {
             strings: ['Certification\'s'],
             typeSpeed: 75,
-            loop: true
+            loop: true,
+            showCursor: true,
+            cursorChar: '_'
         });
         var typed = new Typed('#Project', {
             strings: ['Project\'s'],
             typeSpeed: 75,
-            loop: true
+            loop: true,
+            showCursor: true,
+            cursorChar: '_'
         });
-
-        // function displayText1() {
-        //     var text = document.getElementById("textFieldp1");
-        //     var displaySetting = text.style.display;
-        //     var button = document.getElementById('buttonp1');
-        //     if (displaySetting == 'block') {
-        //         text.style.display = 'none';
-        //         button.innerHTML = 'Show';
-        //     }
-        //     else {
-        //         text.style.display = 'block';
-        //         button.innerHTML = 'Hide';
-        //     }
-        // }
-        // function displayText2() {
-        //     var text = document.getElementById("textFieldp2");
-        //     var displaySetting = text.style.display;
-        //     var button = document.getElementById('buttonp2');
-        //     if (displaySetting == 'block') {
-        //         text.style.display = 'none';
-        //         button.innerHTML = 'Show';
-        //     }
-        //     else {
-        //         text.style.display = 'block';
-        //         button.innerHTML = 'Hide';
-        //     }
-        // }
-        // function displayText3() {
-        //     var text = document.getElementById("textFieldp3");
-        //     var displaySetting = text.style.display;
-        //     var button = document.getElementById('buttonp3');
-        //     if (displaySetting == 'block') {
-        //         text.style.display = 'none';
-        //         button.innerHTML = 'Show';
-        //     }
-        //     else {
-        //         text.style.display = 'block';
-        //         button.innerHTML = 'Hide';
-        //     }
-        // }
-        // function displayText4() {
-        //     var text = document.getElementById("textFieldp4");
-        //     var displaySetting = text.style.display;
-        //     var button = document.getElementById('buttonp4');
-        //     if (displaySetting == 'block') {
-        //         text.style.display = 'none';
-        //         button.innerHTML = 'Show';
-        //     }
-        //     else {
-        //         text.style.display = 'block';
-        //         button.innerHTML = 'Hide';
-        //     }
-        // }
-        // function displayText7() {
-        //     var text = document.getElementById("textFieldp7");
-        //     var displaySetting = text.style.display;
-        //     var button = document.getElementById('buttonp7');
-        //     if (displaySetting == 'block') {
-        //         text.style.display = 'none';
-        //         button.innerHTML = 'Show';
-        //     }
-        //     else {
-        //         text.style.display = 'block';
-        //         button.innerHTML = 'Hide';
-        //     }
-        // }
-        // function displayText5() {
-        //     var text = document.getElementById("textFieldp5");
-        //     var displaySetting = text.style.display;
-        //     var button = document.getElementById('buttonp5');
-        //     if (displaySetting == 'block') {
-        //         text.style.display = 'none';
-        //         button.innerHTML = 'Show';
-        //     }
-        //     else {
-        //         text.style.display = 'block';
-        //         button.innerHTML = 'Hide';
-        //     }
-        // }
-        // function displayText6() {
-        //     var text = document.getElementById("textFieldp6");
-        //     var displaySetting = text.style.display;
-        //     var button = document.getElementById('buttonp6');
-        //     if (displaySetting == 'block') {
-        //         text.style.display = 'none';
-        //         button.innerHTML = 'Show';
-        //     }
-        //     else {
-        //         text.style.display = 'block';
-        //         button.innerHTML = 'Hide';
-        //     }
-        // }
-        function displayText(s,s1) {
-            // var text = document.getElementById("textFieldp8");
+        function displayText(s, s1) {
             var text = document.getElementById(s);
             var displaySetting = text.style.display;
-            // var button = document.getElementById('buttonp8');
             var button = document.getElementById(s1);
             if (displaySetting == 'block') {
                 text.style.display = 'none';
@@ -497,6 +520,44 @@ background-size:100vw;
             else {
                 text.style.display = 'block';
                 button.innerHTML = 'Hide';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var educationLink = document.getElementById('educationLink');
+            var skillsLink = document.getElementById('skillsLink');
+            var projectsLink = document.getElementById('projectsLink');
+            var certificationLink = document.getElementById('certificationLink');
+            var homeLink = document.getElementById('homeLink');
+            var aboutLink = document.getElementById('aboutLink');
+
+            educationLink.addEventListener('click', function () {
+                scrollToSection('secondsection');
+            });
+
+            skillsLink.addEventListener('click', function () {
+                scrollToSection('section3');
+            });
+            homeLink.addEventListener('click', function () {
+                scrollToSection('firstsection');
+            });
+            aboutLink.addEventListener('click', function () {
+                scrollToSection('aboutsection');
+            });
+
+            projectsLink.addEventListener('click', function () {
+                scrollToSection('section4');
+            });
+
+            certificationLink.addEventListener('click', function () {
+                scrollToSection('section5');
+            });
+        });
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                // section.scrollIntoView({ behavior: 'smooth' });
+                var offset = section.offsetTop - window.innerHeight / 2 + section.clientHeight / 2 - 70;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
             }
         }
     </script>
