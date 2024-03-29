@@ -94,6 +94,63 @@ nav ul li:hover,
     margin-top: -8px;
 }
 
+
+.popup{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 88vh;
+    left: 92vw;
+    /* background-color: #aba6a6; */
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid blue;
+  }
+
+/***************************************************/
+.exp{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0px 0px 0px 32px;
+    padding: 10px;
+    border: #707072 1px solid;
+    box-shadow:  1px 0px 14px grey;
+    border-radius: 10px;
+}
+#expsection .exp1{
+    width: 30vw;
+    /* height: 60vh; */
+    padding: 10px 0px;
+    /* background-color: #aba6a6; */
+    border-radius: 10px;
+}
+.cmplogo img{
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+.expdesc span{
+    display: block;
+    background-color: #aba6a6;
+    width: max-content;
+    border-radius: 25px;
+    margin: 10px 0px;
+}
+.expdesc .expdesc2{
+    background-color: transparent;
+    margin: 0px;
+}
+.expdesc .expdesc2 span{
+    display: inline;
+    background-color: darkgray;
+    width: max-content;
+    border-radius: 25px;
+}
+
+
 /***************************************************/
 .aboutimg {
     position: relative;
@@ -104,7 +161,7 @@ nav ul li:hover,
 }
 
 .about-me-content {
-    margin: 10px 40px 10px 50px;
+    margin: -27px 40px 10px 50px;
     text-wrap: wrap;
     width: 55%;
 }
@@ -374,6 +431,20 @@ hr {
     display: flex;
 } 
 @media only screen and (max-width: 600px) {
+    .popup{
+        display: none;
+    }
+   
+    #expsection .exp1{
+        width: auto;
+        height: auto;
+       
+    }
+   
+    .expdesc span{
+       font-size: 24px;
+    }
+
     body{
         width: fit-content;
         margin: auto;
@@ -438,9 +509,10 @@ hr {
     }
     .about-me-content {
         width: auto;
-        margin: 10px 20px;
+        margin:-15px 20px 10px 20px;
         text-align: center;
         font-size: 1.5rem;
+        
     }
 
     .rightsection2-aboutme {
