@@ -142,41 +142,49 @@
         <section id="secondsection" class="secondsection">
             <div class="educationtitle"><span id="Education"></span></div>
             <hr>
-            <div class="education1">
+            <div class="education1" id="e">
                 <div class="leftsection2">
-                    <ul class="edu1">
-                        <li><strong class="red">Course:</strong> B.E</li>
-                        <li><strong class="red">Specialization:</strong> Electronics and communication Engineering</li>
-                        <li><strong class="red">College:</strong> <a href="https://pestrust.edu.in/pesitm/"
-                                target="_blank">Pes Institute Of Technology And Management,
+                    <div class="edu-container edu1">
+                        <ul>
+                            <li><strong class="red">Course:</strong> B.E</li>
+                            <li><strong class="red">Specialization:</strong> Electronics and communication Engineering</li>
+                            <li><strong class="red">College:</strong> <a href="https://pestrust.edu.in/pesitm/" target="_blank">Pes
+                                Institute Of Technology And Management,
                                 Shivamogga</a></li>
-                        <li><strong class="red">PassOut Year:</strong>2023</li>
-                        <li><strong class="red">CGPA: </strong>8.58</li>
-                    </ul>
-                    <hr class="b1">
-                    <ul class="edu2">
-                        <li><strong class="red">Course:</strong> PUC</li>
-                        <li><strong class="red">Specialization:</strong> Science (PCMB)</li>
-                        <li><strong class="red">College:</strong> <a href="" target="_blank">Government Junior College,
+                            <li><strong class="red">PassOut Year:</strong>2023</li>
+                            <li><strong class="red">CGPA: </strong>8.58</li>
+                        </ul>
+                    </div>
+                    <div class="edu-container edu2">
+                        <ul>
+                            <li><strong class="red">Course:</strong> PUC</li>
+                            <li><strong class="red">Specialization:</strong> Science (PCMB)</li>
+                            <li><strong class="red">College:</strong> <a href="" target="_blank">Government Junior College,
                                 Sagara</a></li>
-                        <li><strong class="red">PassOut Year:</strong>2019</li>
-                        <li><strong class="red">Percentage: </strong>73.16</li>
-
-                    </ul>
-                    <hr class="b1">
-                    <ul class="edu3">
-                        <li><strong class="red">Course:</strong> SSLC</li>
-                        <li><strong class="red">School:</strong> <a href="https://www.pragathischool.in/"
-                                target="_blank">Pragthi Composite School,
+                            <li><strong class="red">PassOut Year:</strong>2019</li>
+                            <li><strong class="red">Percentage: </strong>73.16</li>
+                        </ul>
+                    </div>
+                    <div class="edu-container edu3">
+                        <ul>
+                            <li><strong class="red">Course:</strong> SSLC</li>
+                            <li><strong class="red">School:</strong> <a href="https://www.pragathischool.in/" target="_blank">Pragthi
+                                Composite School,
                                 Sagara</a></li>
-                        <li><strong class="red">PassOut Year:</strong>2017</li>
-                        <li><strong class="red">Percentage: </strong>90.24</li>
-
-                    </ul>
+                            <li><strong class="red">PassOut Year:</strong>2017</li>
+                            <li><strong class="red">Percentage: </strong>90.24</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="rightsection2">
+                <div class="dot-container">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                
+                <!-- <div class="rightsection2">
                     <img class="educationimg1" src="images/mortarboard.png">
-                </div>
+                </div> -->
             </div>
         </section>
         <hr>
@@ -509,6 +517,48 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 0;
+    const containers = document.querySelectorAll('.edu-container');
+    const dots = document.querySelectorAll('.dot');
+    const totalContainers = containers.length;
+
+    function showContainer(index) {
+        // Hide all containers and remove active class from all dots
+        containers.forEach((container, idx) => {
+            container.classList.remove('active');
+            dots[idx].classList.remove('active');
+        });
+
+        // Show the current container and activate the corresponding dot
+        containers[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+
+    function showNextContainer() {
+        // Calculate the next index
+        currentIndex = (currentIndex + 1) % totalContainers;
+
+        // Show the next container
+        showContainer(currentIndex);
+    }
+
+    // Initially show the first container
+    showContainer(currentIndex);
+
+    // Set an interval to swap containers every 3 seconds
+    setInterval(showNextContainer, 3000);
+
+    // Add click event listeners to dots for manual navigation
+    dots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const index = parseInt(event.target.getAttribute('data-index'));
+            currentIndex = index;
+            showContainer(currentIndex);
+        });
+    });
+});
+
         var typed = new Typed('#element2', {
             // strings: ['Web Developer', 'Java Developer'],
             strings: ['Full Stack Developer'],
@@ -597,13 +647,13 @@
 
             educationLink.addEventListener('click', function () {
                 scrollToSection('secondsection');
-                educationLink.style.textDecoration="underline";
+                // educationLink.style.textDecoration="underline";
                 educationLink.style.textDecorationColor="red";
             });
 
             skillsLink.addEventListener('click', function () {
                 scrollToSection('section3');
-                skillsLink.style.textDecoration="underline";
+                // skillsLink.style.textDecoration="underline";
                 skillsLink.style.textDecorationColor="red";
             });
 

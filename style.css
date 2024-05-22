@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(265deg, #07081d, #4d41a3);
+    background: linear-gradient(274deg, #07081d, #4d41a3);
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -184,6 +184,44 @@ nav ul li a.active {
     margin: 23px 0px;
     align-items: center;
 }
+#e{
+    flex-direction: column;
+}
+.leftsection2{
+    display: flex;
+}
+
+/* Ensure that only the active div is displayed */
+.edu-container {
+    display: none;
+    height: 200px;
+    /* background-color: #bbb; */
+}
+
+.edu-container.active {
+    display: block;
+}
+
+/* Styles for the dot indicators */
+.dot-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
 
 .educationtitle {
     justify-content: center;
@@ -217,13 +255,18 @@ nav ul li a.active {
 
 .secondsection .education1 {
     display: flex;
+    
     align-items: center;
     justify-content: space-around;
 }
 
-.leftsection2 ul li,
+.leftsection2 ul li{
+    list-style-type: none;
+    font-size: 1.8rem;
+}
 .leftsection3 ul li {
     font-size: 1.2rem;
+    list-style-type: none;
 }
 
 .rigthsection img {
