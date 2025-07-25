@@ -1,0 +1,40 @@
+<section id="projects" class="bg-gradient-to-r from-blue-50 via-white to-indigo-50 py-16 px-4">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-extrabold mb-4 text-blue-600 animate-fade-in">Projects</h2>
+    <p class="text-gray-600 text-lg">Here are some full-stack projects I've built using .NET, Angular, and SQL Server.
+    </p>
+  </div>
+
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+    <div *ngFor="let project of projects; let i = index" class="relative group perspective cursor-pointer"
+      (click)="flipCard(i); $event.stopPropagation()">
+
+      <button class="absolute top-2 right-2 z-20  rounded-full p-2  hover:bg-blue-100"
+        (click)="flipCard(i); $event.stopPropagation()">
+        <i class="fa-solid fa-eye text-blue-600"></i>
+      </button>
+
+
+      <div class="relative h-80 w-full duration-700 transform-style-preserve-3d"
+        [ngClass]="{ 'rotate-y-180': flippedIndex === i }">
+
+        <div
+          class="absolute inset-0 bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center backface-hidden">
+          <i [class]="project.icon + ' text-4xl ' + project.iconColor + ' mb-4'"></i>
+          <h3 class="text-xl font-semibold text-gray-800">{{ project.title }}</h3>
+          <p class="text-sm text-gray-500 mt-2 text-center">{{ project.stack }}</p>
+        </div>
+
+
+        <div
+          class="absolute inset-0 bg-blue-100 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center rotate-y-180 backface-hidden">
+          <p class="text-gray-700 text-sm text-center">
+            {{ project.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

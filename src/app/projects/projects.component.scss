@@ -1,0 +1,19 @@
+
+  .perspective {
+    perspective: 1000px;
+  }
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotateY {
+    transform: rotateY(180deg);
+  }
+  .card {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
