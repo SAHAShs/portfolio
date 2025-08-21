@@ -1,0 +1,44 @@
+<nav [ngClass]="{
+    'bg-transparent text-white': !scrolled,
+    'bg-white shadow-md text-black': scrolled
+  }" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+
+    <div class="text-2xl font-extrabold text-blue-600 tracking-wide">
+      SAHAS H S
+    </div>
+
+
+    <div class="hidden md:flex space-x-8 text-base font-medium text-black ">
+      <a routerLink="/" routerLinkActive="text-blue-600 border-b-2 border-blue-600"
+        [routerLinkActiveOptions]="{ exact: true }" class="hover:text-blue-500 transition">Home</a>
+      <a routerLink="/about" routerLinkActive="text-blue-600 border-b-2 border-blue-600"
+        class="hover:text-blue-500 transition">About</a>
+      <a routerLink="/skills" routerLinkActive="text-blue-600 border-b-2 border-blue-600"
+        class="hover:text-blue-500 transition">Skills</a>
+      <a routerLink="/projects" routerLinkActive="text-blue-600 border-b-2 border-blue-600"
+        class="hover:text-blue-500 transition">Projects</a>
+    </div>
+
+
+    <div class="md:hidden">
+      <button (click)="toggleMenu()" class="focus:outline-none text-blue-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+
+  <div *ngIf="menuOpen"
+    class="md:hidden bg-white border-t border-gray-200 shadow-sm transition-all duration-300 ease-in-out px-4 pb-4 space-y-2">
+    <a routerLink="/" (click)="toggleMenu()" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Home</a>
+    <a routerLink="/about" (click)="toggleMenu()"
+      class="block py-2 text-gray-700 hover:text-blue-600 font-medium">About</a>
+    <a routerLink="/skills" (click)="toggleMenu()"
+      class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Skills</a>
+    <a routerLink="/projects" (click)="toggleMenu()"
+      class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Projects</a>
+  </div>
+</nav>
